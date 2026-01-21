@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .menu li 
+        {
+         list-style: none;
+        }
+
+        .menu ul
+        {
+         list-style: none;
+        }
+
+        .main
+        {
+            width: 80%;
+            height: 50px;
+            display: flex;
+            background-color: aqua;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .menu
+        {
+            width: 80%;
+            display: flex;
+        }
+
+        menu li
+        {
+            position: relative; 
+            padding-left: 0px; 
+            display: inline-block;
+        }
+
+        .menu li a
+        {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            margin-left: 6px;
+            margin-right: 6px;
+            display: inline-block;
+            font-size: larger;
+            white-space: nowrap;
+         
+        }
+
+        .menu li a:hover
+        {
+            color: crimson;
+        }
+
+        .submenu
+        {
+            position: absolute;
+            display: none; 
+            background-color: blueviolet;
+            text-align: center;
+
+        }
+
+        .petamenu
+        {
+            position: absolute;
+            display: none; 
+            left: 100%;
+            top: 0%;
+            background-color: cornflowerblue;
+        }
+
+        .menu li:hover .submenu, .submenu li:hover .petamenu
+        { 
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul class="menu">
+            <li> <a href="">home</a>
+                <ul class="submenu">
+                    <li><a href="">home</a>
+                    <ul class="petamenu">
+                        <li><a href="">home</a></li>
+                        <li><a href="">home</a></li>
+                        <li><a href="">home</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>    
+                </ul>
+            </li>
+            <li><a href="">shop</a>
+                <ul class="submenu">
+                    <li><a href="">home</a>
+                    <ul class="petamenu">
+                        <li><a href="">home</a></li>
+                        <li><a href="">home</a></li>
+                        <li><a href="">home</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>    
+                </ul>
+            </li>
+            <li><a href="">collocn</a></li>
+            <li><a href="">blog</a>
+                <ul class="submenu">
+                    <li><a href="">home</a>
+                    <ul class="petamenu">
+                        <li><a href="">home</a></li>
+                        <li><a href="">home</a></li>
+                        <li><a href="">home</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>    
+                </ul>
+            </li>
+            <li><a href="">page buy</a></li>
+        </ul>
+    </div>
+</body>
+</html>
